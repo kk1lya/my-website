@@ -1,0 +1,70 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Добавляем это свойство, чтобы избежать скроллинга */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button#no {
+    position: relative; /* Изменено с absolute на relative */
+    transition: top 0.3s ease, left 0.3s ease;
+}
+
+/* Адаптивность под мобильные устройства */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
